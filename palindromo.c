@@ -18,17 +18,21 @@ bool palindromo(char *s)
 int main()
 {
 	char s[100];
-	do
+	while(s[0]!= 'F' && s[1]!='I' && s[2]!='M')
 	{
-		scanf("%s", s);
+		scanf("%[^\n]",s);
 		getchar();
+		
 		if(palindromo(s))
 		{
-			printf("SIM");
+			printf("SIM\n");
 		}
 		else
 		{
-			printf("NAO");
+			if(s[0]!= 'F' && s[1]!='I' && s[2]!='M')
+			{
+			printf("NAO\n");
+			}
 		}
-  	}while(s[0]!= 'F' && s[1]!='I' && s[2]!='M');
+  	}
 }
