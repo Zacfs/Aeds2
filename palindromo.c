@@ -8,16 +8,17 @@ bool palindromo(char *s)
 	int i = 0;
 	while( i < (strlen(s)/2) && pal)
 	{
-		if(s[i] != s[strlen(s)-i])
+		if(s[i] != s[(strlen(s)-1)-i])
 		{pal = false;}
+		i++;
 	}
 	return (pal);
 }
 
 int main()
 {
-	char *s = "0";
-	while(s != "FIM")
+	char s[100];
+	do
 	{
 		scanf("%s", s);
 		getchar();
@@ -29,5 +30,5 @@ int main()
 		{
 			printf("NAO");
 		}
-	}
+  	}while(s[0]!= 'F' && s[1]!='I' && s[2]!='M');
 }
