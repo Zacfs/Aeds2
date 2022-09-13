@@ -37,9 +37,7 @@ public class hall{
                                         if(murd[cont4] != "morto")
                                         {
                                                 murd2[cont3] = murd[cont4];
-                                                System.out.println(murd[cont4]);
-                                                System.out.println(murd2[cont3]);
-                                                cont3++;
+                                                cont3++;cont4++;
                                         }
                                         else
                                         {
