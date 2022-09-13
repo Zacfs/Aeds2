@@ -27,7 +27,7 @@ public class hall{
 				for(int v = 0;v<cont;v++)
 				{
 					if(murd[i].charAt(0) == vic[v].charAt(0) &&murd[i].charAt(1) == vic[v].charAt(1) && murd[i].charAt(2) == vic[v].charAt(2) )
-					{murd[i] = "null";
+					{murd[i] = "morto";
 					cont2--;}
 				}	
 			}
@@ -37,11 +37,12 @@ public class hall{
 				{
 					while(cont3<cont2)
 					{
-					if(murd[i] != "null")
+					if(murd[i] != "morto")
 					{
 						murd2[cont3] = murd[i];
-						cont3++;
+						System.out.println(murd[i]);
 						System.out.println(murd2[cont3]);
+						cont3++;
 					}
 					}
 				}
