@@ -28,7 +28,7 @@ public class hall{
                                         {murd[i] = "morto";
                                         cont2--;}
                                 }
-                        }
+                        }//
                                 int cont3 = 0;
                                 int cont4 = 0;
                                 String[] murd2 = new String[cont2];
