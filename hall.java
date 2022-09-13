@@ -2,8 +2,6 @@ import java.util.*;
 import java.io.*;
 import java.nio.*;
 public class hall{
-        String[] murderers;
-        String[] victims;
         public static void main(String[] args)
         {
                 System.out.println("HALL OF MURDERERS");
@@ -36,10 +34,10 @@ public class hall{
                                 String[] murd2 = new String[cont2];
                                         while(cont3<cont2)
                                         {
-                                        if(murd[i] != "morto")
+                                        if(murd[cont4] != "morto")
                                         {
                                                 murd2[cont3] = murd[cont4];
-                                                System.out.println(murd[i]);
+                                                System.out.println(murd[cont4]);
                                                 System.out.println(murd2[cont3]);
                                                 cont3++;
                                         }
@@ -68,6 +66,5 @@ public class hall{
                                                 System.out.println(murd2[i] + " " + mor[i]);
                                         }
                         a.close();
-
         }
 }
